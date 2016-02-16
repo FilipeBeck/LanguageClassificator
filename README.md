@@ -1,2 +1,2 @@
 # LanguageClassificator
-Um pequeno teste com redes neurais utilizando a biblioteca LIBFANN
+Um pequeno teste com redes neurais para iOS utilizando a biblioteca LIBFANN
