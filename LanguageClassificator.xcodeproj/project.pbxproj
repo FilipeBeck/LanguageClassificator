@@ -1,0 +1,416 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8C96F4441C71BEBA0079660E /* ExecutionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C96F4431C71BEBA0079660E /* ExecutionViewController.m */; };
+		8CEE72041C6C1FF10028027C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CEE72031C6C1FF10028027C /* main.m */; };
+		8CEE72071C6C1FF10028027C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CEE72061C6C1FF10028027C /* AppDelegate.m */; };
+		8CEE720A1C6C1FF10028027C /* PreparationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CEE72091C6C1FF10028027C /* PreparationViewController.m */; };
+		8CEE720D1C6C1FF10028027C /* TrainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CEE720C1C6C1FF10028027C /* TrainViewController.m */; };
+		8CEE72101C6C1FF10028027C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CEE720E1C6C1FF10028027C /* Main.storyboard */; };
+		8CEE72121C6C1FF10028027C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CEE72111C6C1FF10028027C /* Assets.xcassets */; };
+		8CEE72151C6C1FF10028027C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CEE72131C6C1FF10028027C /* LaunchScreen.storyboard */; };
+		8CEE961D1C71079800E6B034 /* fann_cascade.c in Sources */ = {isa = PBXBuildFile; fileRef = 8CEE96171C71079800E6B034 /* fann_cascade.c */; };
+		8CEE961E1C71079800E6B034 /* fann_error.c in Sources */ = {isa = PBXBuildFile; fileRef = 8CEE96181C71079800E6B034 /* fann_error.c */; };
+		8CEE961F1C71079800E6B034 /* fann_io.c in Sources */ = {isa = PBXBuildFile; fileRef = 8CEE96191C71079800E6B034 /* fann_io.c */; };
+		8CEE96201C71079800E6B034 /* fann_train_data.c in Sources */ = {isa = PBXBuildFile; fileRef = 8CEE961A1C71079800E6B034 /* fann_train_data.c */; };
+		8CEE96211C71079800E6B034 /* fann_train.c in Sources */ = {isa = PBXBuildFile; fileRef = 8CEE961B1C71079800E6B034 /* fann_train.c */; };
+		8CEE96221C71079800E6B034 /* fann.c in Sources */ = {isa = PBXBuildFile; fileRef = 8CEE961C1C71079800E6B034 /* fann.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8C13EEB51C6F5E7200F4C9F6 /* LanguageClassificator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = LanguageClassificator.entitlements; sourceTree = "<group>"; };
+		8C96F4421C71BEBA0079660E /* ExecutionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExecutionViewController.h; sourceTree = "<group>"; };
+		8C96F4431C71BEBA0079660E /* ExecutionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExecutionViewController.m; sourceTree = "<group>"; };
+		8CEE71FF1C6C1FF10028027C /* LanguageClassificator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LanguageClassificator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CEE72031C6C1FF10028027C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8CEE72051C6C1FF10028027C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8CEE72061C6C1FF10028027C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8CEE72081C6C1FF10028027C /* PreparationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PreparationViewController.h; sourceTree = "<group>"; };
+		8CEE72091C6C1FF10028027C /* PreparationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PreparationViewController.m; sourceTree = "<group>"; };
+		8CEE720B1C6C1FF10028027C /* TrainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrainViewController.h; sourceTree = "<group>"; };
+		8CEE720C1C6C1FF10028027C /* TrainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrainViewController.m; sourceTree = "<group>"; };
+		8CEE720F1C6C1FF10028027C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8CEE72111C6C1FF10028027C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8CEE72141C6C1FF10028027C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8CEE72161C6C1FF20028027C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CEE96061C71078B00E6B034 /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		8CEE96071C71078B00E6B034 /* doublefann.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = doublefann.h; sourceTree = "<group>"; };
+		8CEE96081C71078B00E6B034 /* fann_activation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fann_activation.h; sourceTree = "<group>"; };
+		8CEE96091C71078B00E6B034 /* fann_cascade.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fann_cascade.h; sourceTree = "<group>"; };
+		8CEE960A1C71078B00E6B034 /* fann_cpp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fann_cpp.h; sourceTree = "<group>"; };
+		8CEE960B1C71078B00E6B034 /* fann_data_cpp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fann_data_cpp.h; sourceTree = "<group>"; };
+		8CEE960C1C71078B00E6B034 /* fann_data.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fann_data.h; sourceTree = "<group>"; };
+		8CEE960D1C71078B00E6B034 /* fann_error.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fann_error.h; sourceTree = "<group>"; };
+		8CEE960E1C71078B00E6B034 /* fann_internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fann_internal.h; sourceTree = "<group>"; };
+		8CEE960F1C71078B00E6B034 /* fann_io.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fann_io.h; sourceTree = "<group>"; };
+		8CEE96101C71078B00E6B034 /* fann_train.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fann_train.h; sourceTree = "<group>"; };
+		8CEE96111C71078B00E6B034 /* fann_training_data_cpp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fann_training_data_cpp.h; sourceTree = "<group>"; };
+		8CEE96121C71078B00E6B034 /* fann.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fann.h; sourceTree = "<group>"; };
+		8CEE96131C71078B00E6B034 /* fixedfann.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fixedfann.h; sourceTree = "<group>"; };
+		8CEE96141C71078B00E6B034 /* floatfann.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = floatfann.h; sourceTree = "<group>"; };
+		8CEE96151C71078B00E6B034 /* parallel_fann.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = parallel_fann.h; sourceTree = "<group>"; };
+		8CEE96161C71078B00E6B034 /* parallel_fann.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = parallel_fann.hpp; sourceTree = "<group>"; };
+		8CEE96171C71079800E6B034 /* fann_cascade.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fann_cascade.c; sourceTree = "<group>"; };
+		8CEE96181C71079800E6B034 /* fann_error.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fann_error.c; sourceTree = "<group>"; };
+		8CEE96191C71079800E6B034 /* fann_io.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fann_io.c; sourceTree = "<group>"; };
+		8CEE961A1C71079800E6B034 /* fann_train_data.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fann_train_data.c; sourceTree = "<group>"; };
+		8CEE961B1C71079800E6B034 /* fann_train.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fann_train.c; sourceTree = "<group>"; };
+		8CEE961C1C71079800E6B034 /* fann.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fann.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8CEE71FC1C6C1FF10028027C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8CEE71F61C6C1FF10028027C = {
+			isa = PBXGroup;
+			children = (
+				8CEE72011C6C1FF10028027C /* LanguageClassificator */,
+				8CEE72001C6C1FF10028027C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8CEE72001C6C1FF10028027C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8CEE71FF1C6C1FF10028027C /* LanguageClassificator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8CEE72011C6C1FF10028027C /* LanguageClassificator */ = {
+			isa = PBXGroup;
+			children = (
+				8CEE96031C71074C00E6B034 /* FANN */,
+				8C13EEB51C6F5E7200F4C9F6 /* LanguageClassificator.entitlements */,
+				8CEE72051C6C1FF10028027C /* AppDelegate.h */,
+				8CEE72061C6C1FF10028027C /* AppDelegate.m */,
+				8CEE72081C6C1FF10028027C /* PreparationViewController.h */,
+				8CEE72091C6C1FF10028027C /* PreparationViewController.m */,
+				8CEE720B1C6C1FF10028027C /* TrainViewController.h */,
+				8CEE720C1C6C1FF10028027C /* TrainViewController.m */,
+				8C96F4421C71BEBA0079660E /* ExecutionViewController.h */,
+				8C96F4431C71BEBA0079660E /* ExecutionViewController.m */,
+				8CEE720E1C6C1FF10028027C /* Main.storyboard */,
+				8CEE72111C6C1FF10028027C /* Assets.xcassets */,
+				8CEE72131C6C1FF10028027C /* LaunchScreen.storyboard */,
+				8CEE72161C6C1FF20028027C /* Info.plist */,
+				8CEE72021C6C1FF10028027C /* Supporting Files */,
+			);
+			path = LanguageClassificator;
+			sourceTree = "<group>";
+		};
+		8CEE72021C6C1FF10028027C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8CEE72031C6C1FF10028027C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8CEE96031C71074C00E6B034 /* FANN */ = {
+			isa = PBXGroup;
+			children = (
+				8CEE96051C71076300E6B034 /* src */,
+				8CEE96041C71075C00E6B034 /* include */,
+			);
+			name = FANN;
+			sourceTree = "<group>";
+		};
+		8CEE96041C71075C00E6B034 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				8CEE96061C71078B00E6B034 /* config.h */,
+				8CEE96071C71078B00E6B034 /* doublefann.h */,
+				8CEE96081C71078B00E6B034 /* fann_activation.h */,
+				8CEE96091C71078B00E6B034 /* fann_cascade.h */,
+				8CEE960A1C71078B00E6B034 /* fann_cpp.h */,
+				8CEE960B1C71078B00E6B034 /* fann_data_cpp.h */,
+				8CEE960C1C71078B00E6B034 /* fann_data.h */,
+				8CEE960D1C71078B00E6B034 /* fann_error.h */,
+				8CEE960E1C71078B00E6B034 /* fann_internal.h */,
+				8CEE960F1C71078B00E6B034 /* fann_io.h */,
+				8CEE96101C71078B00E6B034 /* fann_train.h */,
+				8CEE96111C71078B00E6B034 /* fann_training_data_cpp.h */,
+				8CEE96121C71078B00E6B034 /* fann.h */,
+				8CEE96131C71078B00E6B034 /* fixedfann.h */,
+				8CEE96141C71078B00E6B034 /* floatfann.h */,
+				8CEE96151C71078B00E6B034 /* parallel_fann.h */,
+				8CEE96161C71078B00E6B034 /* parallel_fann.hpp */,
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
+		8CEE96051C71076300E6B034 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				8CEE96171C71079800E6B034 /* fann_cascade.c */,
+				8CEE96181C71079800E6B034 /* fann_error.c */,
+				8CEE96191C71079800E6B034 /* fann_io.c */,
+				8CEE961A1C71079800E6B034 /* fann_train_data.c */,
+				8CEE961B1C71079800E6B034 /* fann_train.c */,
+				8CEE961C1C71079800E6B034 /* fann.c */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8CEE71FE1C6C1FF10028027C /* LanguageClassificator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CEE72191C6C1FF20028027C /* Build configuration list for PBXNativeTarget "LanguageClassificator" */;
+			buildPhases = (
+				8CEE71FB1C6C1FF10028027C /* Sources */,
+				8CEE71FC1C6C1FF10028027C /* Frameworks */,
+				8CEE71FD1C6C1FF10028027C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LanguageClassificator;
+			productName = LanguageClassificator;
+			productReference = 8CEE71FF1C6C1FF10028027C /* LanguageClassificator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8CEE71F71C6C1FF10028027C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Beck;
+				TargetAttributes = {
+					8CEE71FE1C6C1FF10028027C = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = H8K44N2TH7;
+						SystemCapabilities = {
+							com.apple.iCloud = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 8CEE71FA1C6C1FF10028027C /* Build configuration list for PBXProject "LanguageClassificator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8CEE71F61C6C1FF10028027C;
+			productRefGroup = 8CEE72001C6C1FF10028027C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8CEE71FE1C6C1FF10028027C /* LanguageClassificator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8CEE71FD1C6C1FF10028027C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CEE72151C6C1FF10028027C /* LaunchScreen.storyboard in Resources */,
+				8CEE72121C6C1FF10028027C /* Assets.xcassets in Resources */,
+				8CEE72101C6C1FF10028027C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8CEE71FB1C6C1FF10028027C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CEE96221C71079800E6B034 /* fann.c in Sources */,
+				8CEE720D1C6C1FF10028027C /* TrainViewController.m in Sources */,
+				8C96F4441C71BEBA0079660E /* ExecutionViewController.m in Sources */,
+				8CEE72071C6C1FF10028027C /* AppDelegate.m in Sources */,
+				8CEE961D1C71079800E6B034 /* fann_cascade.c in Sources */,
+				8CEE96201C71079800E6B034 /* fann_train_data.c in Sources */,
+				8CEE961E1C71079800E6B034 /* fann_error.c in Sources */,
+				8CEE961F1C71079800E6B034 /* fann_io.c in Sources */,
+				8CEE720A1C6C1FF10028027C /* PreparationViewController.m in Sources */,
+				8CEE96211C71079800E6B034 /* fann_train.c in Sources */,
+				8CEE72041C6C1FF10028027C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8CEE720E1C6C1FF10028027C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8CEE720F1C6C1FF10028027C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8CEE72131C6C1FF10028027C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8CEE72141C6C1FF10028027C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8CEE72171C6C1FF20028027C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8CEE72181C6C1FF20028027C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8CEE721A1C6C1FF20028027C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LanguageClassificator/LanguageClassificator.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = LanguageClassificator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = home.Beck.LanguageClassificator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		8CEE721B1C6C1FF20028027C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LanguageClassificator/LanguageClassificator.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = LanguageClassificator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = home.Beck.LanguageClassificator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8CEE71FA1C6C1FF10028027C /* Build configuration list for PBXProject "LanguageClassificator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CEE72171C6C1FF20028027C /* Debug */,
+				8CEE72181C6C1FF20028027C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CEE72191C6C1FF20028027C /* Build configuration list for PBXNativeTarget "LanguageClassificator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CEE721A1C6C1FF20028027C /* Debug */,
+				8CEE721B1C6C1FF20028027C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8CEE71F71C6C1FF10028027C /* Project object */;
+}
