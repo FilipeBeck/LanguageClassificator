@@ -28,8 +28,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-	//ann = fann_create_shortcut(2, 26, 2);
-	ann = fann_create_standard(4, 26, 52, 104, 2);
+	ann = fann_create_shortcut(2, 26, 2);
+	//ann = fann_create_standard(4, 26, 52, 104, 2);
 	
 	//fann_set_activation_steepness_hidden(ann, 1);
 	//fann_set_activation_steepness_output(ann, 1);

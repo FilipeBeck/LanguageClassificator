@@ -87,7 +87,7 @@ int FANN_API callbackTrain(struct fann *ann, struct fann_train_data *train,
 - (void)logFormattedData:(float[26])data
 {
 	for (int i = 0; i < 26; i++)
-		[self addItemToLog:[NSString stringWithFormat:@"%c: %f", ((unsigned char)i) + 'A', data[i]] separator: @""];
+		[self addItemToLog:[NSString stringWithFormat:@"%c: %f", ((unsigned char)i) + 'A', data[i]] separator: @"\n"];
 }
 
 - (void)trainCurrentAddedData
@@ -148,8 +148,8 @@ int FANN_API callbackTrain(struct fann *ann, struct fann_train_data *train,
 		struct fann_train_data* trainData = fann_create_train_array(enData.count + ptData.count, 26, formattedData, 2, results);
 		
 		fann_set_activation_function_output(ann, FANN_SIGMOID_SYMMETRIC);
-		//fann_cascadetrain_on_data(ann, trainData, 100, 10, 0.0);
-		fann_train_on_data(ann, trainData, 50000, 1, 0.0);
+		fann_cascadetrain_on_data(ann, trainData, 100, 1, 0.0);
+		//fann_train_on_data(ann, trainData, 50000, 1, 0.0);
 		
 		[self addItemToLog:@"\nTreino finalizado" separator:@"\n"];
 	});
